@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "ostream": "c",
+        "*.tcc": "c",
+        "algorithm": "c",
+        "istream": "c",
+        "numeric": "c",
+        "streambuf": "c",
+        "type_traits": "c",
+        "compare": "c",
+        "optional": "c",
+        "random": "c",
+        "ranges": "c"
+    }
+}

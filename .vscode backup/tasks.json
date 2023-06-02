@@ -3,14 +3,15 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc 建置使用中檔案",
-            "command": "/usr/local/bin/gcc",
+            "command": "/usr/bin/gcc",
             "args": [
                 "-fdiagnostics-color=always",
+                "-g",
                 "-Wall",
                 "-Wextra",
                 "-Wpedantic",
-                "-g",
                 "${file}",
+                //"${workspaceFolder}/termbase.c",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
