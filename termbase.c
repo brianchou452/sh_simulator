@@ -131,7 +131,6 @@ void print_debug_info(int argc, char *argv[], char *env[]) {
 
 static void report_error_and_exit(const char *msg) {
   perror(msg);
-  //(child ? _exit : exit)(EXIT_FAILURE);
   exit(EXIT_FAILURE);
 }
 
