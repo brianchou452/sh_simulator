@@ -48,7 +48,9 @@ void trim_white_space(char *str) {
     end--;
   }
   str[end + 1] = '\0';
-  strcpy(str, str + start);
+  char *tmp = malloc(strlen(str+start) + 1); // 要複製一份，不然自己複製自己會出錯
+  strcpy(tmp, str+start);
+  strcpy(str, tmp);
 }
 
 /*
